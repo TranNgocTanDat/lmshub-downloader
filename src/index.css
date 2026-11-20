@@ -1,0 +1,192 @@
+:root {
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2937;
+  background: #f3f4f6;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #e5e7eb;
+    background: #111827;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+header h1 {
+  font-size: 26px;
+  margin: 8px 0;
+}
+
+header p {
+  color: #6b7280;
+  margin: 0 0 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  header p {
+    color: #9ca3af;
+  }
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: #1f2937;
+    border-color: #374151;
+  }
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 0 0 12px;
+  word-break: break-word;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+textarea,
+input[type='text'] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 13px;
+  background: #f9fafb;
+  color: inherit;
+  resize: vertical;
+}
+
+@media (prefers-color-scheme: dark) {
+  textarea,
+  input[type='text'] {
+    background: #111827;
+    border-color: #4b5563;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button,
+a.download {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  color: inherit;
+  padding: 9px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+  button,
+  a.download {
+    background: #374151;
+    border-color: #4b5563;
+  }
+}
+
+button.primary,
+a.download.primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+  font-weight: 600;
+}
+
+.error {
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 12px 0 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .error {
+    background: #450a0a;
+    border-color: #7f1d1d;
+    color: #fca5a5;
+  }
+}
+
+.result dl {
+  margin: 0 0 12px;
+}
+
+.result dl > div {
+  display: flex;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.result dt {
+  width: 90px;
+  flex-shrink: 0;
+  color: #6b7280;
+}
+
+.result dd {
+  margin: 0;
+  word-break: break-all;
+}
+
+.result dd.ok {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.result dd.expired {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.hint {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 12px 0 0;
+}
+
+.guide ol {
+  margin: 0 0 8px;
+  padding-left: 20px;
+}
+
+.guide li {
+  margin-bottom: 6px;
+}
